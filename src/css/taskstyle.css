@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* variable */
+
+:root {
+  --color-button: #219f95;
+  --color-blue-dark: #234894;
+  --color-blue-light: #afcedd;
+  --color-headings: #1e1e1e;
+  --color-gray: #696969;
+  --color-white: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* container */
+.container{
+    display: grid;
+    margin: 5rem;
+}
+
+/* header */
+
+.main__tittle {
+  color: var(--color-headings);
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 5rem;
+}
+
+/* box__header */
+
+.header__description {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+
+.header__description p {
+  color: var(--color-blue-dark);
+  font-size: 1.6rem;
+  font-weight: 600;
+  align-self: center;
+}
+
+.header--date {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-gray);
+  align-self: center;
+  direction: ltr;
+  flex-basis: 27rem;
+}
+
+.number--box {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue-dark);
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding: 0.1rem 0.9rem;
+  margin: 1rem;
+  border-radius: 7px;
+  text-align: center;
+  white-space: nowrap;
+  outline: 0;
+  border: 0;
+}
+
+/* request__box */
+
+.request__box {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.reaquest--h2 {
+  color: var(--color-headings);
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.request--id {
+  color: var(--color-gray);
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+/* image box */
+
+.image__box {
+  display: flex;
+  margin: 1rem;
+}
+
+.image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10px;
+}
+
+.username {
+  color: var(--color-headings);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem;
+  align-self: center;
+}
+
+.btn {
+  background-color: var(--color-button);
+  color: var(--color-white);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  padding: 1.8rem 2.1rem;
+  margin-right: 13rem;
+  border-radius: 8px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+
+/* media-query */
+
+@media screen and (min-width: 768px){
+
+    .container{
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+    }
+
+@media screen and (min-width: 1300px){
+
+.container{
+grid-template-columns: repeat(3, 1fr);
+}
+
+}
+
