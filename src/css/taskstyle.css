@@ -24,9 +24,14 @@ html {
 }
 
 /* container */
-.container{
-    display: grid;
-    margin: 5rem;
+.container {
+  display: grid;
+  margin: 5rem;
+}
+
+.id__cart {
+  max-width: 55rem;
+  padding: 5rem;
 }
 
 /* header */
@@ -36,6 +41,7 @@ html {
   font-size: 3rem;
   font-weight: 900;
   margin: 5rem;
+  padding-right: 5rem;
 }
 
 /* box__header */
@@ -133,19 +139,14 @@ html {
 
 /* media-query */
 
-@media screen and (min-width: 768px){
-
-    .container{
+@media screen and (min-width: 768px) {
+  .container {
     grid-template-columns: repeat(2, 1fr);
-    }
-    
-    }
-
-@media screen and (min-width: 1300px){
-
-.container{
-grid-template-columns: repeat(3, 1fr);
+  }
 }
 
+@media screen and (min-width: 1300px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
